@@ -1,11 +1,9 @@
 package com.learning.Todos;
 
-import org.springframework.stereotype.Component;
+import com.learning.Todos.models.Todo;
+import com.sun.jdi.InterfaceType;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Component
-public class TodoRepository {
+public interface TodoRepository extends JpaRepository<Todo, Long> {
 
-    String getAlltodos(){
-        return "get all todos";
-    }
 }
